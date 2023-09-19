@@ -24,15 +24,6 @@ db.sequelize.sync()
     console.log("Failed to sync db: " + err.message);
   });
 
-//const pool = new Pool({
-//      user: process.env.PGUSER,
-//      host: process.env.PGHOST,
-//       database: process.env.PGDATABASE,
-//       password: process.env.PGPASSWORD,
-//       port: process.env.PGPORT,
-//});
-//pool.connect();
-
 app.listen(PORT, () => {
   console.log("Server Listening at", PORT);
 });
